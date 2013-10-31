@@ -1,0 +1,6 @@
+# original:
+# default: -r features --tags ~@wip --color --format pretty --format html -o results.html --dotcucumber features/.cucumber
+# ci: -r features DISPLAY=:99.0 HEADLESS=true TRAVIS=true --tags ~@wip --format progress --format html -o results.html --format junit -o junit
+
+default: -r features --color --format pretty language=pt-br browser=firefox environment=regression
+
